@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/users', usersRoutes);
 app.use('/api/projects', projectsRoutes);
-app.use('/api/favorites', favoritesRoutes)
+app.use('/api/favorites', favoritesRoutes);
 
 app.use(() => {
   throw new HttpError('Could not find this route.', 404);
